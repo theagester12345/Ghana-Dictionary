@@ -1,11 +1,11 @@
-from django.contrib import messages
+
 from django.shortcuts import render,redirect
 from django.core.exceptions import ObjectDoesNotExist
-from django.core import serializers
-import requests
-import bs4
+
+
+
 from .models import translation
-import json
+
 
 
 # Create your views here.
