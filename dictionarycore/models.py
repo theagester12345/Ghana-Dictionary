@@ -1,5 +1,5 @@
 from django.db import models
-import simplejson as json
+
 
 
 # Create your models here.
