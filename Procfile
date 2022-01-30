@@ -1,1 +1,1 @@
-web: gunicorn GhanaDictionary.wsgi 
+web: gunicorn --pythonpath ghiblimovs GhanaDictionary.wsgi --log-file -
