@@ -12,7 +12,7 @@ from .models import translation
 
 #Home Page
 def index(request):
-    return render(request,'index.hbs')
+    return render(request,'index.html')
 
 # Function to query word exisiten
 
@@ -51,7 +51,7 @@ def search(request):
     #     translation='Not Found'
 
 
-    return render(request,'search.hbs',{'translation': query_translation[0]})
+    return render(request,'search.html',{'translation': query_translation[0]})
 
 
 # Add New Translation Page 
@@ -67,11 +67,11 @@ def addTranslation(request):
 
     #messages.success(request,"Translation Saved.")
 
-    return render(request,'add_translation.hbs')
+    return render(request,'add_translation.html')
 
 
 #404 page 
 def errorPage(request):
-    return render(request,'404.hbs')
+    return render(request,'404.html')
 
 
